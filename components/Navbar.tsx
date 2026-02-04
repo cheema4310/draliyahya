@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
     { name: 'Ventures', href: '#ventures' },
     { name: 'History', href: '#timeline' },
     { name: 'Latest', href: '#latest' },
-    { name: 'Contact', href: '#contact' },
+    // { name: 'Contact', href: '#contact' },
   ];
 
   return (
@@ -29,8 +29,8 @@ const Navbar: React.FC = () => {
       animate={{ y: 0 }}
       transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed w-full z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-navy-950/70 backdrop-blur-xl border-b border-white/5 py-4 shadow-glass' 
+        isScrolled
+          ? 'bg-navy-950/70 backdrop-blur-xl border-b border-white/5 py-4 shadow-glass'
           : 'bg-transparent py-6'
       }`}
     >
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
               </span>
             </a>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-1">
             {navLinks.map((link) => (
@@ -58,8 +58,8 @@ const Navbar: React.FC = () => {
                 <span className="relative z-10">{link.name}</span>
               </a>
             ))}
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="ml-4 px-6 py-2 bg-medical-600 hover:bg-medical-500 text-white text-sm font-semibold rounded-full transition-all shadow-glow hover:shadow-lg transform hover:-translate-y-0.5"
             >
               Contact
@@ -81,7 +81,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
