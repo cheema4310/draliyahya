@@ -28,7 +28,7 @@ const LatestNews: React.FC = () => {
           <div className="md:w-5/12 relative min-h-[300px] overflow-hidden">
             <img
               // src="https://placehold.co/600x800/1e3a8a/white?text=CEO+Summit+Karachi"
-              src="/assets/images/karachi.jpg"
+              src="https://res.cloudinary.com/dcr0te1k4/image/upload/v1770242284/karachi_lp4a1r.jpg"
               alt="CEO Summit Karachi 2026"
               className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
             />

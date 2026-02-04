@@ -121,7 +121,7 @@ const Hero: React.FC = () => {
               <div className="aspect-[4/5] rounded-xl overflow-hidden bg-navy-800 relative group">
                 <img
                   // src="https://placehold.co/500x600/1e293b/white?text=Dr.+Ali+Yahya"
-                  src="/assets/images/aliyahya.png"
+                  src="https://res.cloudinary.com/dcr0te1k4/image/upload/v1770242285/aliyahya_lt185o.png"
                   alt="Dr. Ali Yahya"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
