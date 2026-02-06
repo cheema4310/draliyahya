@@ -45,6 +45,34 @@ const Footer: React.FC = () => {
                 <span>info@yqgroup.com</span>
               </a>
             </div>
+            {/* Social Media Icons */}
+            <div className="flex gap-3 mt-6">
+              {[
+                {
+                  icon: 'fa-linkedin-in',
+                  href: 'https://www.linkedin.com/in/draliyahya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                },
+                { icon: 'fa-x-twitter', href: 'https://x.com/Aliyahyach' },
+                {
+                  icon: 'fa-facebook-f',
+                  href: 'https://www.facebook.com/share/17a8PBe7a3/',
+                },
+                {
+                  icon: 'fa-instagram',
+                  href: 'https://www.instagram.com/aliyahyach?igsh=NmFuYW8yZXNqczhr',
+                },
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:bg-medical-500/20 hover:text-medical-400 hover:border-medical-500/30 hover:shadow-[0_0_10px_rgba(20,184,166,0.3)]"
+                >
+                  <i
+                    className={`fa-brands ${social.icon.includes('envelope') ? 'fa-solid' : ''} ${social.icon} text-sm`}
+                  ></i>
+                </a>
+              ))}
+            </div>
           </div>
 
           <div>

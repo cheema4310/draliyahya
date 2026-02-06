@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-medical-500/30 bg-medical-500/10 backdrop-blur-sm">
                 <span className="w-2 h-2 rounded-full bg-medical-400 animate-pulse"></span>
                 <span className="text-medical-300 text-xs font-semibold tracking-widest uppercase">
-                  Portfolio 2026
+                  Leadership {new Date().getFullYear()}
                 </span>
               </div>
 
@@ -68,6 +68,10 @@ const Hero: React.FC = () => {
                 <p className="text-white">Social Welfare</p>
                 <p>Finance Secretary, DYPWS</p>
               </div>
+              {/* <div>
+                <p className="text-white">Education</p>
+                <p>CEO, DYIMS</p>
+              </div> */}
               <div>
                 <p className="text-white">Workforce</p>
                 <p>Director, Manmatrix</p>
@@ -83,6 +87,40 @@ const Hero: React.FC = () => {
               Leading with quality and community impact across healthcare,
               education, and workforce development.
             </motion.p>
+
+            {/* Social Media Bar */}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+              className="flex gap-4 pt-2"
+            >
+              {[
+                {
+                  icon: 'fa-linkedin-in',
+                  href: 'https://www.linkedin.com/in/draliyahya?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+                },
+                { icon: 'fa-x-twitter', href: 'https://x.com/Aliyahyach' },
+                {
+                  icon: 'fa-facebook-f',
+                  href: 'https://www.facebook.com/share/17a8PBe7a3/',
+                },
+                {
+                  icon: 'fa-instagram',
+                  href: 'https://www.instagram.com/aliyahyach?igsh=NmFuYW8yZXNqczhr',
+                },
+              ].map((social, index) => (
+                <a
+                  key={index}
+                  href={social.href}
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 border border-white/10 backdrop-blur-sm text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:bg-medical-500/20 hover:text-medical-400 hover:border-medical-500/30 hover:shadow-[0_0_15px_rgba(20,184,166,0.4)]"
+                >
+                  <i
+                    className={`fa-brands ${social.icon.includes('envelope') ? 'fa-solid' : ''} ${social.icon} text-lg`}
+                  ></i>
+                </a>
+              ))}
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
