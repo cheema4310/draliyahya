@@ -1,20 +1,57 @@
 <div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+<img width="1200" height="475" alt="CVBanner" src="https://res.cloudinary.com/dcr0te1k4/image/upload/v1770558338/aliyahyaCV_csmsgy.png" />
 </div>
 
-# Run and deploy your AI Studio app
+# Dr. Ali Yahya — CV / Executive Portfolio Website
 
-This contains everything you need to run your app locally.
+A fast-turnaround personal CV / executive portfolio website built for a college friend (Doctor + CEO) who needed an urgent online presence.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1tG1ZUGRrHO0oyrELlVWsPG1LlgwR7BjX
+- **Live Demo:** https://www.draliyahya.com/
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## Project Background
 
+This site was initially generated via **prompting (Google AI Studio / Gemini)** to get a working first version quickly.  
+After the scaffold, I manually improved:
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- Layout refinements + Provide Socials (Link + Design)
+- image upload / image handling adjustments + Favicons
+- content corrections (headings, copy and displayed information)
+
+---
+
+## Features (Typical CV Site Sections)
+
+- Hero / headline section
+- About / bio
+- Experience / leadership highlights
+- Achievements / credentials (as needed)
+- Contact section
+- Clean, responsive layout (portfolio-style)
+
+> Section titles and exact layout may differ based on the current code, but the goal is a complete CV-style one-page website.
+
+---
+
+## Tech Stack
+
+- **React + TypeScript**
+- **Vite**
+- Deployed on **Vercel**
+
+---
+
+## Getting Started (Local Development)
+
+### Prerequisites
+
+- Node.js (LTS recommended)
+- npm
+
+### Install & Run
+
+```bash
+npm install
+npm run dev
+```
